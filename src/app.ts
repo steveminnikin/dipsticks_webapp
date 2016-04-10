@@ -1,5 +1,5 @@
 import {bootstrap} from 'angular2/platform/browser';
-import {DipsticksWebappApp} from './app/dipsticks-webapp';
+import {DipsticksApp} from './app/dipsticks-app';
 
 
-bootstrap(DipsticksWebappApp);
+bootstrap(DipsticksApp);

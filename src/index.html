@@ -1,23 +1,42 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>DipsticksWebapp</title>
-  <base href=".">
-  <script src="vendor/angular2/bundles/angular2-polyfills.js"></script>
-  {{content-for 'head'}}
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <dipsticks-webapp-app>Loading...</dipsticks-webapp-app>
 
-  <script src="vendor/systemjs/dist/system.src.js"></script>
-  <script src="vendor/rxjs/bundles/Rx.js"></script>
-  <script src="vendor/angular2/bundles/angular2.dev.js"></script>
-  <script src="vendor/angular2/bundles/http.dev.js"></script>
-  <script src="vendor/angular2/bundles/router.dev.js"></script>
-  <script>
-    System.config({
+<head>
+    <meta charset="utf-8">
+    <title>DipsticksApp</title>
+    <base href=".">
+    <script src="vendor/angular2/bundles/angular2-polyfills.js"></script>
+    {{content-for 'head'}}
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+        <!-- Mainly scripts -->
+    <!--<script src="js/jquery-2.1.1.js"></script>-->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <!--<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>-->
+    <!--<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>-->
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+    
+</head>
+
+<body>
+    <dipsticks-app>Loading...index</dipsticks-app>
+<script src="vendor/systemjs/dist/system.src.js"></script>
+    <script src="vendor/rxjs/bundles/Rx.js"></script>
+    <script src="vendor/angular2/bundles/angular2.dev.js"></script>
+    <script src="vendor/angular2/bundles/http.dev.js"></script>
+    <script src="vendor/angular2/bundles/router.dev.js"></script>
+
+    
+    <script>
+        System.config({
       packages: {
         app: {
           format: 'register',
@@ -26,6 +45,9 @@
       }
     });
     System.import('app.js').then(null, console.error.bind(console));
-  </script>
+    </script>
 </body>
+
+
+
 </html>
